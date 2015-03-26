@@ -1,0 +1,31 @@
+<nav id="mainNav" class="navbar navbar-inverse">
+	<div class="container">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="{{ "/" | prepend: site.baseurl }}">
+				<img class="hidden-xs" alt="{{ site.title }}" src="/images/logo.png">
+				<span class="visible-xs">{{ site.title }}</span>
+			</a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li class=""><a href="/news">Expo News</a></li>
+				<!-- <li class=""><a href="#">Event Details</a></li> -->
+				<li class=""><a href="/sponsor">Exhibitors & Sponsors</a></li>
+				<li class=""><a href="#">Our Partners</a></li>
+				<li class=""><a href="#">Contact Us</a></li>
+			</ul>
+
+			<ul class="nav navbar-nav navbar-right"></ul>
+
+		</div>
+	</div>
+</nav>

@@ -1,0 +1,30 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+@import "font-awesome";
+
+@import "bootswatch/simplex/variables";
+@import "bootstrap";
+@import "bootswatch/simplex/bootswatch";
+
+
+// logo
+@media (min-width: 768px) {
+	#mainNav {
+		margin-bottom: 35px;
+	}
+	.navbar-brand {
+		margin-top: -3px;
+		margin-left: 0;
+		padding-top: 0;
+	}
+}
+
+// news images
+.media-list.news .media-object { max-width: 64px; }
+@media (min-width: 768px) {
+	.media-list.news .media-object { max-width: 96px; }
+}

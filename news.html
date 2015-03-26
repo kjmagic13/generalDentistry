@@ -1,0 +1,37 @@
+---
+layout: page
+title: News & Information
+permalink: /news/
+---
+
+
+
+<ul class="media-list news">
+	{% for post in site.posts %}
+	<li class="media">
+		{% if post.image %}
+		<div class="media-left">
+			<a href="{{ post.url | prepend: site.baseurl }}">
+				<img class="media-object" src="{{ post.image }}" alt="{{ post.title }}">
+			</a>
+		</div>
+		{% endif %}
+		<div class="media-body">
+			<h3 class="media-heading">
+				<a href="{{ post.url | prepend: site.baseurl }}">
+					{{ post.title }}
+				</a>
+				<br>
+				<small>{{ post.date | date: "%b %-d, %Y" }}</small>
+			</h3>
+			{{ post.excerpt }}
+		</div>
+	</li>
+	{% endfor %}
+</ul>
+
+<hr>
+
+<p>
+	<a class="btn btn-xs btn-danger pull-right" href="{{ "/feed.xml" | prepend: site.baseurl }}">subscribe via RSS <i class="fa fa-fw fa-rss"></i></a>
+</p>

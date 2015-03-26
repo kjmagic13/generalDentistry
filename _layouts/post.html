@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<header class="page-header">
+	<h1>
+		{{ page.title }}<br>
+		<small>
+			{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}
+		</small>
+	</h1>
+</header>
+
+<div class="row">
+	
+	<article class="col-sm-7 col-md-8">
+
+		{% if page.image %}
+		<p>
+			<img class="img-thumbnail" src="{{ page.image }}" alt="{{ page.title }}" style="display: block; margin: 0 auto;">
+		</p>
+		{% endif %}
+
+		{{ content }}
+	</article>
+
+	<aside class="col-sm-5 col-md-4">
+		{% include sidebar.html %}
+	</aside>
+
+
+</div>
+

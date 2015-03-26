@@ -1,0 +1,31 @@
+// List Groups
+
+@mixin list-group-item-variant($state, $background, $color) {
+  .list-group-item-#{$state} {
+    color: $color !important;
+    background-color: $background;
+
+    // [converter] extracted a& to a.list-group-item-#{$state}
+  }
+
+  a.list-group-item-#{$state} {
+    color: $color !important;
+
+    .list-group-item-heading {
+      color: inherit;
+    }
+
+    &:hover,
+    &:focus {
+      color: $color !important;
+      background-color: darken($background, 5%);
+    }
+    &.active,
+    &.active:hover,
+    &.active:focus {
+      color: #fff !important;
+      background-color: $color;
+      border-color: $color;
+    }
+  }
+}

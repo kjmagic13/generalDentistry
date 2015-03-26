@@ -1,0 +1,163 @@
+---
+layout: default
+title: Exhibitors & Sponsors
+permalink: /sponsor/
+---
+
+<div class="jumbotron">
+	<div class="row">
+		<div class="col-sm-7">
+			<h2>{{page.title}}</h2>
+			<p>
+				While our local emergency responders are ready for any disaster we face, they still look to you, our residents, to help.
+			</p>
+			<small class="lead">
+				The City and County are looking for vendors who provide either hurricane protection mitigation and/or survival products or services to participate at the Tampa Bay Hurricane Expo.  Vendor opportunities are available for businesses, local non-profits and government agencies.
+			</small>
+		</div>
+
+		<div class="col-sm-5">
+			<img src="http://cache2.asset-cache.net/xc/466337389.jpg?v=2&c=IWSAsset&k=2&d=ohQ5Hi5uQ8z-TgacP8zJYLRWHQA2eh9Zmnq9ECdBVVmXPWffd-zmCIcX2HQjXFeJ0" alt="..." class="img-thumbnail">
+		</div>
+	</div>
+	
+</div>
+
+
+<div class="table-responsive">
+	
+	<table class="table table-striped table-hover">
+		<thead>
+			<tr>
+				<th></th>
+				<th>Non-Profit Exhibitor</th>
+				<th>Business Exhibitor</th>
+				<th>Hurricane Partner</th>
+				<th>Parking Sponsor</th>
+				<th>Title Sponsor</th>
+			</tr>
+			<tr>
+				<th>Price</th>
+				<th>$50</th>
+				<th>$350</th>
+				<th>$1000</th>
+				<th>$3000</th>
+				<th>$5000</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Display Booth: 6-ft table and 2 folding chairs</td>
+				<td><i class="fa fa-fw fa-check-square-o"></i></td>
+				<td><i class="fa fa-fw fa-check-square-o"></i></td>
+				<td><i class="fa fa-fw fa-check-square-o"></i></td>
+				<td><i class="fa fa-fw fa-check-square-o"></i></td>
+				<td><i class="fa fa-fw fa-check-square-o"></i></td>
+			</tr>
+			<tr>
+				<td>Company name in Expo Map/Program guide handed to all attendees</td>
+				<td><i class="fa fa-fw fa-check-square-o"></i></td>
+				<td><i class="fa fa-fw fa-check-square-o"></i></td>
+				<td><i class="fa fa-fw fa-check-square-o"></i></td>
+				<td><i class="fa fa-fw fa-check-square-o"></i></td>
+				<td><i class="fa fa-fw fa-check-square-o"></i></td>
+			</tr>
+			<tr>
+				<td>Company name with link to your website</td>
+				<td><i class="fa fa-fw fa-check-square-o"></i></td>
+				<td><i class="fa fa-fw fa-check-square-o"></i></td>
+				<td><i class="fa fa-fw fa-check-square-o"></i></td>
+				<td><i class="fa fa-fw fa-check-square-o"></i></td>
+				<td><i class="fa fa-fw fa-check-square-o"></i></td>
+			</tr>
+			<tr>
+				<td>Company logo/name on Expo print flyers and posters</td>
+				<td></td>
+				<td></td>
+				<td><i class="fa fa-fw fa-check-square-o"></i></td>
+				<td><i class="fa fa-fw fa-check-square-o"></i></td>
+				<td><i class="fa fa-fw fa-check-square-o"></i></td>
+			</tr>
+			<tr>
+				<td>Company logo/name plus showcase (up to 100 words)</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td><i class="fa fa-fw fa-check-square-o"></i></td>
+				<td><i class="fa fa-fw fa-check-square-o"></i></td>
+			</tr>
+			<tr>
+				<td>Media Day participation with access and exposure to several news media outlets</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td><i class="fa fa-fw fa-check-square-o"></i></td>
+				<td><i class="fa fa-fw fa-check-square-o"></i></td>
+			</tr>
+			<tr>
+				<td>Banner space at MOSI parking entrance (up to 6 ft. x 4 ft.) </td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td><i class="fa fa-fw fa-check-square-o"></i></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Banner space at interior location of Expo (up to 6 ft. x 4 ft.)</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td><i class="fa fa-fw fa-check-square-o"></i></td>
+			</tr>
+			<tr>
+				<td>Recognition as title sponsor on all Expo media advertising (print, radio, television, and internet).</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td><i class="fa fa-fw fa-check-square-o"></i></td>
+			</tr>
+
+		</tbody>
+	</table>
+
+</div>
+
+<div class="row">
+
+	<div class="col-sm-6">
+		<h4>Current Tampa Bay Hurricane Expo Vendors</h4>
+		<ul>
+			{% for vendor in site.data.vendors%}
+			<li>{{vendor.name}}</li>
+			{% endfor %}
+		</ul>
+	</div>
+
+	<div class="col-sm-6">
+		<div class="well">
+			{% include form-paypal.html %}
+		</div>
+		<p>
+			<strong>
+				If you do not wish to register and pay online, please use the printable <a href="#">registration form</a>.
+			</strong>
+		</p>
+		<p>
+			Make checks payable to: City of Tampa Hurricane Expo<br>
+			Mail to: Peter Ignacio, Tampa Fire Rescue, 808 East Zack Street, Tampa FL 33602
+		</p>
+
+		<em class="small">
+			<p>
+				All fees and registration forms must be received by May 16, 2014. Registration fee after April 30, 2014 is $400. Late or day of Expo exhibitors may not be accommodated. Sponsor commitments and logos must be received by April 30, 2014, in order to place logos in advertisements that will begin running three weeks before the event.
+			</p>
+
+			<p>
+				For more information or to register and pay online please visit www.tampabayhurricaneexpo.com or contact: Peter Ignacio, Tampa Office of Emergency Management Phone: (813) 274-8170 • Fax: (813) 274-7006 • Email: Peter.Ignacio@Tampagov.net
+			</p>
+		</em>
+	</div>
+
+</div>

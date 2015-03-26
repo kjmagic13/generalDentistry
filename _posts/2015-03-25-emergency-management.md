@@ -11,12 +11,12 @@ As a family project, you can research how to prepare for and be safe during hurr
 <div class="row text-center">
 	<div class="col-xs-5">
 		<a href="http://www.hillsboroughcounty.org/emergency/" target="_blank">
-			<img src="/images/hc-logo.jpg" class="img-responsive">
+			<img src="{{site.baseurl}}/images/hc-logo.jpg" class="img-responsive">
 		</a>
 	</div>
 	<div class="col-xs-7">
 		<a href="http://www.tampagov.net/dept_emergency_management/" target="_blank">
-			<img src="/images/cit-tampa-logo.gif" class="img-responsive">
+			<img src="{{site.baseurl}}/images/cit-tampa-logo.gif" class="img-responsive">
 		</a>
 	</div>
 </div>

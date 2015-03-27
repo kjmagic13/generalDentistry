@@ -1,0 +1,23 @@
+---
+layout: page
+title: Sponsorships & Partners
+permalink: /partners/
+---
+
+
+
+<div class="row">
+	{% for partner in site.data.partners%}
+	<div class="col-sm-4">
+		<div class="text-center">
+			<img src="{{partner.image}}" alt="{{partner.name}}" class="img-circle img-thumbnail">
+			<div class="caption">
+				<h3>{{partner.name}}</h3>
+				{% if partner.description %}
+				<p>{{parnter.description}}</p>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+	{% endfor %}
+</div>

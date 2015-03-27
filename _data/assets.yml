@@ -1,0 +1,6 @@
+# will load from "{{site.baseurl}}/js/{{asset.src}}.js"
+js:
+    - src: footer
+
+# unused at the moment
+css:

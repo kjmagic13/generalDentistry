@@ -1,23 +1,23 @@
 ---
 layout: default
-title: Exhibitors & Sponsors
+title: Information for Exhibitors and Sponsors
 permalink: /sponsor/
 ---
 
 <div class="jumbotron">
 	<div class="row">
-		<div class="col-sm-7">
+		<div class="col-md-8">
 			<h2>{{page.title}}</h2>
 			<p>
 				While our local emergency responders are ready for any disaster we face, they still look to you, our residents, to help.
 			</p>
-			<small class="lead">
+			<p class="small lead">
 				The City and County are looking for vendors who provide either hurricane protection mitigation and/or survival products or services to participate at the Tampa Bay Hurricane Expo.  Vendor opportunities are available for businesses, local non-profits and government agencies.
-			</small>
+			</p>
 		</div>
 
-		<div class="col-sm-5">
-			<img src="http://cache2.asset-cache.net/xc/466337389.jpg?v=2&c=IWSAsset&k=2&d=ohQ5Hi5uQ8z-TgacP8zJYLRWHQA2eh9Zmnq9ECdBVVmXPWffd-zmCIcX2HQjXFeJ0" alt="..." class="img-thumbnail">
+		<div class="col-md-4 text-center">
+			<img src="{{site.baseurl}}/images/vendors.jpg" alt="..." class="img-thumbnail">
 		</div>
 	</div>
 	
@@ -128,11 +128,17 @@ permalink: /sponsor/
 
 	<div class="col-sm-6">
 		<h4>Current Tampa Bay Hurricane Expo Vendors</h4>
+		{% if site.data.vendors %}
 		<ul>
-			{% for vendor in site.data.vendors%}
+			{% for vendor in site.data.vendors %}
 			<li>{{vendor.name}}</li>
 			{% endfor %}
 		</ul>
+		{% else %}
+		<em class="lead">
+			There are currently no Exhibitors or Sponsors registered.
+		</em>
+		{% endif %}
 	</div>
 
 	<div class="col-sm-6">

@@ -1,18 +1,16 @@
 # Site settings
-title: 2015 Tampa Bay Hurricane Expo
+title: Tampa Bay Hurricane Expo
 email: info@hillsboroughcounty.org
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+description: "The Tampa Bay Hurricane Expo will feature guest speakers, safety demonstrations, emergency vehicle displays, vendors of safety products, and personal disaster preparedness."
+
 baseurl: "/hurricaneExpo" # the subpath of your site, e.g. /blog/
 url: "http://tampabayhurricaneexpo.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 
 timezone: America/New_York
-event_date: 2015-05-30 09:00:00
-end_date: 2015-05-30 14:00:00
+event_date: 2015-05-30 10:00:00 EST
+end_date: 2015-05-30 16:00:00 EST
 
 # Build settings
 markdown: kramdown

@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  "City & County Emergency Management"
-date:   2015-03-25 14:37:09
+date:   2014-05-24 14:37:09
 categories: news
-image: "http://cache4.asset-cache.net/xc/523628951.jpg?v=2&c=IWSAsset&k=2&d=rZHrmw5RgsTGttbVoaIu4L0egKpYMrHILpNGIrwCNL9OuoN1KbCpmZ5YUWiu4Y-80"
+image: null
+remote_image: "http://cache4.asset-cache.net/xc/523628951.jpg?v=2&c=IWSAsset&k=2&d=rZHrmw5RgsTGttbVoaIu4L0egKpYMrHILpNGIrwCNL9OuoN1KbCpmZ5YUWiu4Y-80"
 excerpt_separator: <!--more-->
 ---
-As a family project, you can research how to prepare for and be safe during hurricane season by clicking on the City or County logo to be directed to their emergency management pages. You will find a wealth of information there.
+It’s never too late to get prepared for hurricane season. As a family project, you can research how to prepare for and be safe during hurricane season by clicking on the City or County logo to be directed to their emergency management pages. You’ll find a wealth of information there.
 
 <div class="row text-center">
 	<div class="col-xs-5">

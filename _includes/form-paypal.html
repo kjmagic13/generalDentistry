@@ -1,7 +1,7 @@
-<form class="form-horizontal" action="" target="_blank" data-action="https://www.paypal.com/cgi-bin/webscr">
+<form class="form-horizontal" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
 
 	<input type="hidden" name="cmd" value="_s-xclick">
-	<input type="hidden" name="hosted_button_id" value="EDNJTYXBBZUHU">
+	<input type="hidden" name="hosted_button_id" value="QEVV83CYRA566">
 	<input type="hidden" name="on0" value="Participation Level">
 	<input type="hidden" name="currency_code" value="USD">
 
@@ -12,10 +12,10 @@
 			<div class="col-lg-9">
 				<select name="os0" class="form-control" required>
 					<option value="" disabled selected>Select your Participation Level</option>
-					<option value="Non-Profit Exhibitor">Non-Profit Exhibitor $50.00 USD</option>
-					<option value="Business Exhibitor">Business Exhibitor $500.00 USD</option>
-					<option value="Parking Sponsor">Premium Booth Space $3,000.00 USD</option>
-					<option value="Title Sponsor">Parking Sponsor $5,000.00 USD</option>
+					<option value="Non-Profit">Non-Profit $50.00 USD</option>
+					<option value="Business">Business $500.00 USD</option>
+					<option value="Premium Booth Space">Premium Booth Space $1,000.00 USD</option>
+					<option value="Parking Sponsor">Parking Sponsor $5,000.00 USD</option>
 				</select>
 			</div>
 		</div>
@@ -66,8 +66,12 @@
 
 		<div class="form-group">
 			<div class="col-lg-9 col-lg-offset-3">
+				
+				<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+				
 				<button type="reset" class="btn btn-default">Reset</button>
 				<button type="submit" class="btn btn-danger"><i class="fa fa-fw fa-paypal"></i> Pay Now</button>
+
 			</div>
 		</div>
 	</fieldset>

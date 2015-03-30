@@ -5,8 +5,9 @@ description: "The Tampa Bay Hurricane Expo will feature guest speakers, safety d
 
 baseurl: "/hurricaneExpo" # the subpath of your site, e.g. /blog/
 url: "http://tampabayhurricaneexpo.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+
+# paginate: 2
+# paginate_path: "news/:num"
 
 timezone: America/New_York
 event_date: 2015-05-30 10:00:00 EST

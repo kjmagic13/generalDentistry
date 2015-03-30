@@ -1,78 +1,80 @@
-<form class="form-horizontal" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+<div class="alert alert-{{include.class}}">
+	<form class="form-horizontal" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
 
-	<input type="hidden" name="cmd" value="_s-xclick">
-	<input type="hidden" name="hosted_button_id" value="QEVV83CYRA566">
-	<input type="hidden" name="on0" value="Participation Level">
-	<input type="hidden" name="currency_code" value="USD">
+		<input type="hidden" name="cmd" value="_s-xclick">
+		<input type="hidden" name="hosted_button_id" value="QEVV83CYRA566">
+		<input type="hidden" name="on0" value="Participation Level">
+		<input type="hidden" name="currency_code" value="USD">
 
-	<fieldset>
-		<legend>Register and Pay Online</legend>
-		<div class="form-group">
-			<label for="select" class="col-lg-3 control-label">Participation Level</label>
-			<div class="col-lg-9">
-				<select name="os0" class="form-control" required>
-					<option value="" disabled selected>Select your Participation Level</option>
-					<option value="Non-Profit">Non-Profit $50.00 USD</option>
-					<option value="Business">Business $500.00 USD</option>
-					<option value="Premium Booth Space">Premium Booth Space $1,000.00 USD</option>
-					<option value="Parking Sponsor">Parking Sponsor $5,000.00 USD</option>
-				</select>
+		<fieldset>
+			<legend>Register and Pay Online</legend>
+			<div class="form-group">
+				<label for="select" class="col-lg-3 control-label">Participation Level</label>
+				<div class="col-lg-9">
+					<select name="os0" class="form-control" required>
+						<option value="" disabled selected>Select your Participation Level</option>
+						<option value="Non-Profit">Non-Profit $50.00 USD</option>
+						<option value="Business">Business $500.00 USD</option>
+						<option value="Premium Booth Space">Premium Booth Space $1,000.00 USD</option>
+						<option value="Parking Sponsor">Parking Sponsor $5,000.00 USD</option>
+					</select>
+				</div>
 			</div>
-		</div>
-		<div class="form-group">
-			<input type="hidden" name="on1" value="Name / Organization:">
-			<label for="inputEmail" class="col-lg-3 control-label">Name / Organization</label>
-			<div class="col-lg-9">
-				<input type="text" class="form-control" name="os1" placeholder="Name / Organization" required>
+			<div class="form-group">
+				<input type="hidden" name="on1" value="Name / Organization:">
+				<label for="inputEmail" class="col-lg-3 control-label">Name / Organization</label>
+				<div class="col-lg-9">
+					<input type="text" class="form-control" name="os1" placeholder="Name / Organization" required>
+				</div>
 			</div>
-		</div>
-		<div class="form-group">
-			<label for="inputEmail" class="col-lg-3 control-label">Contact Name</label>
-			<div class="col-lg-9">
-				<div class="row">
-					<div class="col-sm-6">
-						<input type="text" class="form-control" name="first_name" placeholder="First Name" required>
-					</div>
-					<div class="col-sm-6">
-						<input type="text" class="form-control" name="last_name" placeholder="Last Name" required>
+			<div class="form-group">
+				<label for="inputEmail" class="col-lg-3 control-label">Contact Name</label>
+				<div class="col-lg-9">
+					<div class="row">
+						<div class="col-sm-6">
+							<input type="text" class="form-control" name="first_name" placeholder="First Name" required>
+						</div>
+						<div class="col-sm-6">
+							<input type="text" class="form-control" name="last_name" placeholder="Last Name" required>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="form-group">
-			<label for="inputEmail" class="col-lg-3 control-label">Contact Email Address</label>
-			<div class="col-lg-9">
-				<input type="email" class="form-control" name="email" placeholder="Email" required>
+			<div class="form-group">
+				<label for="inputEmail" class="col-lg-3 control-label">Contact Email Address</label>
+				<div class="col-lg-9">
+					<input type="email" class="form-control" name="email" placeholder="Email" required>
+				</div>
 			</div>
-		</div>
-		<div class="form-group">
-			<label for="inputEmail" class="col-lg-3 control-label">Billing Address</label>
-			<div class="col-lg-9">
-				<input type="text" class="form-control" name="address1" placeholder="Street Address" required>
-				<input type="text" class="form-control" name="address2" placeholder="Street Address Continued">
-				<div class="row">
-					<div class="col-sm-6">
-						<input type="text" class="form-control" name="city" placeholder="City" required>
-					</div>
-					<div class="col-sm-3">
-						<input type="text" class="form-control" maxlength="2" name="state" placeholder="State" required>
-					</div>
-					<div class="col-sm-3">
-						<input type="number" class="form-control" maxlength="5" name="zip" placeholder="Zip" required>
+			<div class="form-group">
+				<label for="inputEmail" class="col-lg-3 control-label">Billing Address</label>
+				<div class="col-lg-9">
+					<input type="text" class="form-control" name="address1" placeholder="Street Address" required>
+					<input type="text" class="form-control" name="address2" placeholder="Street Address Continued">
+					<div class="row">
+						<div class="col-sm-6">
+							<input type="text" class="form-control" name="city" placeholder="City" required>
+						</div>
+						<div class="col-sm-3">
+							<input type="text" class="form-control" maxlength="2" name="state" placeholder="State" required>
+						</div>
+						<div class="col-sm-3">
+							<input type="number" class="form-control" maxlength="5" name="zip" placeholder="Zip" required>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<div class="form-group">
-			<div class="col-lg-9 col-lg-offset-3">
-				
-				<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-				
-				<button type="reset" class="btn btn-default">Reset</button>
-				<button type="submit" class="btn btn-danger"><i class="fa fa-fw fa-paypal"></i> Pay Now</button>
+			<div class="form-group">
+				<div class="col-lg-9 col-lg-offset-3">
 
+					<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+
+					<button type="reset" class="btn btn-default">Reset</button>
+					<button type="submit" class="btn btn-{{include.class}}"><i class="fa fa-fw fa-paypal"></i> Pay Now</button>
+
+				</div>
 			</div>
-		</div>
-	</fieldset>
-</form>
+		</fieldset>
+	</form>
+</div>

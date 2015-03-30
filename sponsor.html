@@ -115,10 +115,8 @@ permalink: /sponsor/
 
 <div class="row">
 
-	<div class="col-sm-6">
-		<div class="well">
-			{% include form-paypal.html %}
-		</div>
+	<div class="col-md-7">
+		{% include form-paypal.html class="success" %}
 		<p>
 			<strong>
 				If you do not wish to register and pay online, please use the printable <a href="{{site.baseurl}}/media/2015-Registration-Form.pdf" download>registration form</a>.
@@ -140,7 +138,7 @@ permalink: /sponsor/
 		</em>
 	</div>
 	
-	<div class="col-sm-6">
+	<div class="col-md-5">
 		<h4>Current Tampa Bay Hurricane Expo Vendors</h4>
 		{% if site.data.vendors %}
 		<ul>

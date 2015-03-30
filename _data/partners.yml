@@ -1,12 +1,12 @@
 - name: "Hillsborough County"
-  image: http://www.tampabayhurricaneexpo.com/images/bocc.gif
+  image: hc-logo.jpg
   description: 0
   url: 0
 - name: "City of Tampa"
-  image: http://www.tampabayhurricaneexpo.com/images/bocc.gif
+  image: cit-tampa-logo.gif
   description: 0
   url: 0
 - name: "MOSI"
-  image: http://www.tampabayhurricaneexpo.com/images/bocc.gif
+  image: mosi.jpg
   description: 0
   url: 0

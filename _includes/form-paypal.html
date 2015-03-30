@@ -1,22 +1,29 @@
-<form class="form-horizontal">
+<form class="form-horizontal" action="" target="_blank" data-action="https://www.paypal.com/cgi-bin/webscr">
+
+	<input type="hidden" name="cmd" value="_s-xclick">
+	<input type="hidden" name="hosted_button_id" value="EDNJTYXBBZUHU">
+	<input type="hidden" name="on0" value="Participation Level">
+	<input type="hidden" name="currency_code" value="USD">
+
 	<fieldset>
 		<legend>Register and Pay Online</legend>
 		<div class="form-group">
 			<label for="select" class="col-lg-3 control-label">Participation Level</label>
 			<div class="col-lg-9">
-				<select class="form-control" id="select">
-					<option>1</option>
-					<option>2</option>
-					<option>3</option>
-					<option>4</option>
-					<option>5</option>
+				<select name="os0" class="form-control" required>
+					<option value="" disabled selected>Select your Participation Level</option>
+					<option value="Non-Profit Exhibitor">Non-Profit Exhibitor $50.00 USD</option>
+					<option value="Business Exhibitor">Business Exhibitor $500.00 USD</option>
+					<option value="Parking Sponsor">Premium Booth Space $3,000.00 USD</option>
+					<option value="Title Sponsor">Parking Sponsor $5,000.00 USD</option>
 				</select>
 			</div>
 		</div>
 		<div class="form-group">
+			<input type="hidden" name="on1" value="Name / Organization:">
 			<label for="inputEmail" class="col-lg-3 control-label">Name / Organization</label>
 			<div class="col-lg-9">
-				<input type="text" class="form-control" name="org" placeholder="Name / Organization">
+				<input type="text" class="form-control" name="os1" placeholder="Name / Organization" required>
 			</div>
 		</div>
 		<div class="form-group">
@@ -24,10 +31,10 @@
 			<div class="col-lg-9">
 				<div class="row">
 					<div class="col-sm-6">
-						<input type="text" class="form-control" name="first" placeholder="First Name">
+						<input type="text" class="form-control" name="first_name" placeholder="First Name" required>
 					</div>
 					<div class="col-sm-6">
-						<input type="text" class="form-control" name="last" placeholder="Last Name">
+						<input type="text" class="form-control" name="last_name" placeholder="Last Name" required>
 					</div>
 				</div>
 			</div>
@@ -35,23 +42,23 @@
 		<div class="form-group">
 			<label for="inputEmail" class="col-lg-3 control-label">Contact Email Address</label>
 			<div class="col-lg-9">
-				<input type="text" class="form-control" name="email" placeholder="Email">
+				<input type="email" class="form-control" name="email" placeholder="Email" required>
 			</div>
 		</div>
 		<div class="form-group">
 			<label for="inputEmail" class="col-lg-3 control-label">Billing Address</label>
 			<div class="col-lg-9">
-				<input type="text" class="form-control" name="address1" placeholder="Street Address">
+				<input type="text" class="form-control" name="address1" placeholder="Street Address" required>
 				<input type="text" class="form-control" name="address2" placeholder="Street Address Continued">
 				<div class="row">
 					<div class="col-sm-6">
-						<input type="text" class="form-control" name="city" placeholder="City">
+						<input type="text" class="form-control" name="city" placeholder="City" required>
 					</div>
 					<div class="col-sm-3">
-						<input type="text" class="form-control" name="state" placeholder="State">
+						<input type="text" class="form-control" maxlength="2" name="state" placeholder="State" required>
 					</div>
 					<div class="col-sm-3">
-						<input type="text" class="form-control" name="zip" placeholder="Zip">
+						<input type="number" class="form-control" maxlength="5" name="zip" placeholder="Zip" required>
 					</div>
 				</div>
 			</div>
@@ -60,7 +67,7 @@
 		<div class="form-group">
 			<div class="col-lg-9 col-lg-offset-3">
 				<button type="reset" class="btn btn-default">Reset</button>
-				<button type="submit" class="btn btn-danger">Submit</button>
+				<button type="submit" class="btn btn-danger"><i class="fa fa-fw fa-paypal"></i> Pay Now</button>
 			</div>
 		</div>
 	</fieldset>

@@ -1,6 +1,8 @@
 # will load from "{{site.baseurl}}/js/{{asset.src}}.js"
 js:
+    - src: partners
     - src: footer
+    - src: jquery.freetile.min
 
 # unused at the moment
 css:

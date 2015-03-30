@@ -4,20 +4,16 @@ title: Sponsorships and Partners
 permalink: /partners/
 ---
 
+<p>
+	For more information, contact Peter Ignacio of the City of Tampa Fire Rescue at (813) 274-8170, or by <a href="mailto:Peter.Ignacio@Tampagov.net">email</a>. Sponsor commitments and logos need to be received by May 1, 2015 in order to place logos in printed materials that will begin being distributed three weeks before the event.
+</p>
 
+<div id="partner-images">
 
-<div class="row">
 	{% for partner in site.data.partners%}
-	<div class="col-sm-4">
-		<div class="text-center">
-			<img src="{{partner.image}}" alt="{{partner.name}}" class="img-circle img-thumbnail">
-			<div class="caption">
-				<h3>{{partner.name}}</h3>
-				{% if partner.description %}
-				<p>{{parnter.description}}</p>
-				{% endif %}
-			</div>
-		</div>
-	</div>
+
+	<img src="{{site.baseurl}}/images/{{partner.image}}" alt="{{partner.name}}" class="img-thumbnail" style="max-width: 32%;">
+
 	{% endfor %}
+
 </div>

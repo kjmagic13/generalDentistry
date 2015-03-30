@@ -116,21 +116,6 @@ permalink: /sponsor/
 <div class="row">
 
 	<div class="col-sm-6">
-		<h4>Current Tampa Bay Hurricane Expo Vendors</h4>
-		{% if site.data.vendors %}
-		<ul>
-			{% for vendor in site.data.vendors %}
-			<li>{{vendor.name}}</li>
-			{% endfor %}
-		</ul>
-		{% else %}
-		<em class="lead">
-			There are currently no Exhibitors or Sponsors registered.
-		</em>
-		{% endif %}
-	</div>
-
-	<div class="col-sm-6">
 		<div class="well">
 			{% include form-paypal.html %}
 		</div>
@@ -153,6 +138,21 @@ permalink: /sponsor/
 				For more information please contact: Peter Ignacio, Tampa Office of Emergency Management Phone: (813) 274-8170 • Fax: (813) 274-7006 • Email: <a href="mailto:Peter.Ignacio@Tampagov.net">Peter.Ignacio@Tampagov.net</a>
 			</p>
 		</em>
+	</div>
+	
+	<div class="col-sm-6">
+		<h4>Current Tampa Bay Hurricane Expo Vendors</h4>
+		{% if site.data.vendors %}
+		<ul>
+			{% for vendor in site.data.vendors %}
+			<li>{{vendor.name}}</li>
+			{% endfor %}
+		</ul>
+		{% else %}
+		<em class="lead">
+			There are currently no Exhibitors or Sponsors registered.
+		</em>
+		{% endif %}
 	</div>
 
 </div>

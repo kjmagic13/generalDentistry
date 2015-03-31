@@ -140,17 +140,19 @@ permalink: /sponsor/
 	
 	<div class="col-md-5">
 		<h4>Current Tampa Bay Hurricane Expo Vendors</h4>
-		{% if site.data.vendors %}
-		<ul>
-			{% for vendor in site.data.vendors %}
-			<li>{{vendor.name}}</li>
-			{% endfor %}
-		</ul>
-		{% else %}
-		<em class="lead">
-			There are currently no Exhibitors or Sponsors registered.
-		</em>
-		{% endif %}
+		<div id="sponsors">
+			{% if site.data.vendors %}
+			<ul>
+				{% for vendor in site.data.vendors %}
+				<li>{{vendor.name}}</li>
+				{% endfor %}
+			</ul>
+			{% else %}
+			<em class="lead">
+				There are currently no Exhibitors or Sponsors registered.
+			</em>
+			{% endif %}
+		</div>
 	</div>
 
 </div>

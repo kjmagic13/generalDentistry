@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Everything’s Fresh™ Market"
-date:   2015-03-26 14:37:09
+date:   2015-03-24 14:37:09
 categories: news
 image: fresh-market.png
 excerpt_separator: <!--more-->

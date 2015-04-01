@@ -16,7 +16,7 @@ It’s never too late to get prepared for hurricane season. As a family project,
 	</div>
 	<div class="col-xs-7">
 		<a href="http://www.tampagov.net/dept_emergency_management/" target="_blank">
-			<img src="{{site.baseurl}}/images/cit-tampa-logo.gif" class="img-responsive">
+			<img src="{{site.baseurl}}/images/city-tampa-logo.gif" class="img-responsive">
 		</a>
 	</div>
 </div>

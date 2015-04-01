@@ -3,7 +3,10 @@ layout: default
 ---
 
 <div class="jumbotron">
-	<h1>Be Ready Tampa Bay!</h1>
+	<h1>
+		{{site.title}}<br>
+		<small>{{ site.event_date | date: "%A %B %-d, %Y" }}</small>
+	</h1>
 	<p>
 		Take the mystery out of storm season preparation and make the homework for family disaster planning a little easier.
 	</p>
@@ -12,23 +15,23 @@ layout: default
 
 <div class="row text-center">
 	
-	<a class="col-sm-4" href="{{site.baseurl}}{% post_url 2015-03-25-2015-expo %}">
-		<img class="img-circle img-thumbnail" src="{{site.baseurl}}/images/be-ready.png" style="width: 200px; height: 200px;">
-		<h3>Be Ready!</h3>
+	<a class="col-sm-4" href="{{ "/news" | prepend: site.baseurl }}">
+		<img class="img-circle img-thumbnail" src="{{site.baseurl}}/images/family-fun.png" style="width: 200px; height: 200px;">
+		<h3>Education and Free Family Fun</h3>
 	</a>	
 	<a class="col-sm-4" href="{{ "/sponsor" | prepend: site.baseurl }}">
-		<img class="img-circle img-thumbnail" src="{{site.baseurl}}/images/ways-to-help.png" style="width: 200px; height: 200px;">
-		<h3>Ways to Help</h3>
+		<img class="img-circle img-thumbnail" src="{{site.baseurl}}/images/promote.png" style="width: 200px; height: 200px;">
+		<h3>Promote Your Business or Service</h3>
 	</a>	
 	<a class="col-sm-4" href="{{site.baseurl}}{% post_url 2014-05-24-emergency-management %}">
 		<img class="img-circle img-thumbnail" src="{{site.baseurl}}/images/prepared-sm.png" style="width: 200px; height: 200px;">
-		<h3>Research</h3>
+		<h3>Be Safe</h3>
 	</a>
 
 </div>
 
 <header class="page-header">
-	<h1>{{site.title}}</h1>
+	<h1>Be Ready Tampa Bay!</h1>
 </header>
 
 <div class="row">
@@ -37,16 +40,36 @@ layout: default
 	<main class="col-sm-7 col-md-8 lead">
 
 		<p>
-			The Tampa Bay Hurricane Expo is a free, entertaining and informative event for the entire community. There will be dozens of vendors on display, representing private companies and government agencies, to take the mystery out of storm season preparation and make the homework for family disaster planning a little easier. 
+			Join us for the largest hurricane preparedness expo in Florida on {{ site.event_date | date: "%A %B %-d, %Y" }} from {{ site.event_date | date: "%r" }} to {{ site.end_date | date: "%r" }} at the Museum of Science and Industry. The Expo is an educational event for the entire family. You will enjoy plenty of activities for adults and children, exhibits and much more!
 		</p>
 
 		<p>
-			Panel presentations throughout the day will feature meteorologists from local news stations and the National Weather Service, local emergency management officials, and experts in various other disaster response fields. Bring your questions and be prepared to take home a wealth of information about what you can do to prepare you, your family and your home.  
+			This year's theme, Be Ready Tampa Bay, will focus on the importance of taking actions before a major disaster to ensure you can recover successfully and thrive after a storm.
 		</p>
 
 		<p>
-			While you’re here, plan to spend the day and visit MOSI. Experience Disasterville featuring WeatherQuest, a 10,000-square-foot exhibition on floods, hail, lightning, tsunamis and volcanoes, including immersion theatres that demonstrate what it's like to be in an earthquake, hurricane, tornado and wildfire. The museum is open to 6 p.m. on Saturday.
+			While our local emergency responders are ready for any disaster we face, they still look to you, our residents, to <a href="{{ "/sponsor" | prepend: site.baseurl }}">help</a>. 
 		</p>
+
+		<p>
+			In addition to guest speakers, the event will feature safety demonstrations, emergency vehicle displays, educational exhibits, and vendors of safety products, personal disaster preparedness and home retrofit products.
+		</p>
+
+		<div class="row text-center">
+			<div class="col-xs-4">
+				<a href="http://www.hillsboroughcounty.org/emergency/" target="_blank">
+					<img src="{{site.baseurl}}/images/hc-logo.jpg" class="img-responsive">
+				</a>
+			</div>
+			<div class="col-xs-5">
+				<a href="http://www.tampagov.net/dept_emergency_management/" target="_blank">
+					<img src="{{site.baseurl}}/images/city-tampa-logo.gif" class="img-responsive">
+				</a>
+			</div><div class="col-xs-3">
+			<a href="http://www.tampagov.net/dept_emergency_management/" target="_blank">
+				<img src="{{site.baseurl}}/images/mosi.jpg" class="img-responsive">
+			</a>
+		</div>
 
 
 	</main>

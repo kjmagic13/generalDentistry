@@ -10,13 +10,13 @@ permalink: /news/
 		{% if post.image %}
 		<div class="media-left">
 			<a href="{{ post.url | prepend: site.baseurl }}">
-				<img class="media-object" src="{{site.baseurl}}/images/{{ post.image }}" alt="{{ post.title }}">
+				<img class="media-object img-thumbnail" src="{{site.baseurl}}/images/{{ post.image }}" alt="{{ post.title }}">
 			</a>
 		</div>
 		{% elsif post.remote_image %}
 		<div class="media-left">
 			<a href="{{ post.url | prepend: site.baseurl }}">
-				<img class="media-object" src="{{ post.remote_image }}" alt="{{ post.title }}">
+				<img class="media-object img-thumbnail" src="{{ post.remote_image }}" alt="{{ post.title }}">
 			</a>
 		</div>
 		{% endif %}
@@ -25,8 +25,8 @@ permalink: /news/
 				<a href="{{ post.url | prepend: site.baseurl }}">
 					{{ post.title }}
 				</a>
-				<br>
-				<small>{{ post.date | date: "%b %-d, %Y" }}</small>
+				<!-- <br> -->
+				<!-- <small>{{ post.date | date: "%b %-d, %Y" }}</small> -->
 			</h3>
 			{{ post.excerpt }}
 		</div>

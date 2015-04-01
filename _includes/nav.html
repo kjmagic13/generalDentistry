@@ -1,3 +1,23 @@
+<div class="container hidden-xs">
+	<div class="row">
+		<ul class="nav nav-pills pull-right">
+
+		{% for nav_item in site.date.nav_items %}
+
+		{{nav_item.name}}
+
+
+		{% endfor %}
+
+
+			<li><a href="{{ "/news" | prepend: site.baseurl }}">Expo News</a></li>
+			<li><a href="{{ "/sponsor" | prepend: site.baseurl }}">Exhibitors & Sponsors</a></li>
+			<li><a href="{{ "/partners" | prepend: site.baseurl }}">Our Partners</a></li>
+			<li><a href="{{ "/contact" | prepend: site.baseurl }}">Contact Us</a></li>
+		</ul>
+	</div>
+</div>
+
 <nav id="mainNav" class="navbar navbar-inverse">
 	<div class="container">
 		<!-- Brand and toggle get grouped for better mobile display -->
@@ -16,7 +36,19 @@
 
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			<ul class="nav navbar-nav">
+
+			<ul class="nav navbar-nav hidden-xs">
+				<div class="navbar-text lead">
+					<h1>
+					{{ site.title }}
+					<small>
+						Saturday May 30, 2015
+					</small>
+					</h1>
+				</div>
+			</ul>
+
+			<ul class="nav navbar-nav visible-xs">
 				<li class=""><a href="{{ "/news" | prepend: site.baseurl }}">Expo News</a></li>
 				<!-- <li class=""><a href="#">Event Details</a></li> -->
 				<li class=""><a href="{{ "/sponsor" | prepend: site.baseurl }}">Exhibitors & Sponsors</a></li>

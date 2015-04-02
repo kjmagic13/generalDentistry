@@ -2,17 +2,15 @@
 
 	<div class="container">
 
-	<hr>
+		<hr>
 
 		<div class="row">
 
 			<nav class="col-sm-7 col-sm-push-5 text-center">
 				<ul class="nav nav-pills" style="display: inline-block;">
-					<li><a href="{{ "/" | prepend: site.baseurl }}">Home</a></li>
-					<li><a href="{{ "/news" | prepend: site.baseurl }}">Expo News</a></li>
-					<li><a href="{{ "/sponsor" | prepend: site.baseurl }}">Exhibitors & Sponsors</a></li>
-					<li><a href="{{ "/partners" | prepend: site.baseurl }}">Our Partners</a></li>
-					<li><a href="{{ "/contact" | prepend: site.baseurl }}">Contact Us</a></li>
+					{% for navitem in site.data.navitems %}
+					<li><a href="{{ navitem.href | prepend: site.baseurl }}">{{navitem.text}}</a></li>
+					{% endfor %}
 					<li><a href="https://www.facebook.com/pages/Tampa-Bay-Hurricane-Expo/123528671182856" target="_blank"><i class="fa fa-fw fa-facebook"></i></a></li>
 					<!-- <li><a href="#" target="_blank"><i class="fa fa-fw fa-twitter"></i></a></li> -->
 				</ul>

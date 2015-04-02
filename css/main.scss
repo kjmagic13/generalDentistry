@@ -10,21 +10,57 @@
 @import "bootstrap";
 @import "bootswatch/simplex/bootswatch";
 
+.jumbotron {
+	background: url({{site.baseurl}}/images/hurricane.png) center center no-repeat;
+	background-position: cover;
 
-// nav
+	text-shadow: 3px 3px #000;
+	color: #fff;
+
+	small { color: #fff; }
+
+}
 
 
-
-
-// logo
+// all but xs
 @media (min-width: 768px) {
-	#mainNav {
+	// nav
+	#navBar {
+		height: 101px;
 		margin-bottom: 35px;
 	}
+
+	#navInfo {
+		strong {
+			font-size: 2em;
+			line-height: 1em;
+			small {
+				font-size: 0.8em;
+				font-weight: normal;
+			}
+		}
+	}
+
+	#navPills {
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+
 	.navbar-brand {
-		margin-top: -3px;
+		margin-top: -34px;
 		margin-left: 0;
 		padding-top: 0;
+	}
+
+	.jumbotron {
+		position: relative;
+	}
+
+	#freeAdmission {
+		position: absolute;
+		right: -30px;
+		bottom: -75px;
+		// background-color: #fff;
 	}
 }
 

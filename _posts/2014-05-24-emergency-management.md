@@ -11,7 +11,7 @@ It’s never too late to get prepared for hurricane season. As a family project,
 <div class="row text-center">
 	<div class="col-xs-5">
 		<a href="http://www.hillsboroughcounty.org/emergency/" target="_blank">
-			<img src="{{site.baseurl}}/images/hc-logo.jpg" class="img-responsive">
+			<img src="{{site.baseurl}}/images/hc-logo.png" class="img-responsive">
 		</a>
 	</div>
 	<div class="col-xs-7">

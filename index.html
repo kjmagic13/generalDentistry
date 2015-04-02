@@ -5,29 +5,15 @@ layout: default
 <div class="jumbotron">
 	<h1>
 		{{site.title}}<br>
-		<small>{{ site.event_date | date: "%A %B %-d, %Y" }}</small>
+		<small>{{ site.event_date | date: "%A %B %-d, %Y" }} at MOSI, </small>
 	</h1>
-	<p>
-		Take the mystery out of storm season preparation and make the homework for family disaster planning a little easier.
-	</p>
-	<!-- <p><a class="btn btn-primary">My Evacuation Zone</a></p> -->
-</div>
+	<div class="row">
+		<p class="col-sm-9">
+			There’s something for everyone at the largest expo of its kind in Tampa Bay!
+		</p>
+	</div>
 
-<div class="row text-center">
-	
-	<a class="col-sm-4" href="{{ "/news" | prepend: site.baseurl }}">
-		<img class="img-circle img-thumbnail" src="{{site.baseurl}}/images/family-fun.png" style="width: 200px; height: 200px;">
-		<h3>Education and Free Family Fun</h3>
-	</a>	
-	<a class="col-sm-4" href="{{ "/sponsor" | prepend: site.baseurl }}">
-		<img class="img-circle img-thumbnail" src="{{site.baseurl}}/images/promote.png" style="width: 200px; height: 200px;">
-		<h3>Promote Your Business or Service</h3>
-	</a>	
-	<a class="col-sm-4" href="{{site.baseurl}}{% post_url 2014-05-24-emergency-management %}">
-		<img class="img-circle img-thumbnail" src="{{site.baseurl}}/images/prepared-sm.png" style="width: 200px; height: 200px;">
-		<h3>Be Safe</h3>
-	</a>
-
+	<img id="freeAdmission" class="hidden-xs" src="{{site.baseurl}}/images/free-admission.png">
 </div>
 
 <header class="page-header">
@@ -36,11 +22,12 @@ layout: default
 
 <div class="row">
 
-
 	<main class="col-sm-7 col-md-8 lead">
 
+		<img class="col-xs-6 col-sm-6 col-md-4 pull-right" src="{{site.baseurl}}/images/DSC_0776.png">
+
 		<p>
-			Join us for the largest hurricane preparedness expo in Florida on {{ site.event_date | date: "%A %B %-d, %Y" }} from {{ site.event_date | date: "%r" }} to {{ site.end_date | date: "%r" }} at the Museum of Science and Industry. The Expo is an educational event for the entire family. You will enjoy plenty of activities for adults and children, exhibits and much more!
+			Join us on {{ site.event_date | date: "%A %B %-d, %Y" }} from {{site.start_time}} to {{site.end_time}} at the Museum of Science and Industry for a day you won’t want to miss! Enjoy activities for adults and children, educational displays, tips from the experts, safety demonstrations, emergency vehicle displays, and vendors of safety products, personal disaster preparedness and home retrofit products, and more – it’s all FREE!
 		</p>
 
 		<p>
@@ -58,7 +45,7 @@ layout: default
 		<div class="row text-center">
 			<div class="col-xs-4">
 				<a href="http://www.hillsboroughcounty.org/emergency/" target="_blank">
-					<img src="{{site.baseurl}}/images/hc-logo.jpg" class="img-responsive">
+					<img src="{{site.baseurl}}/images/hc-logo.png" class="img-responsive">
 				</a>
 			</div>
 			<div class="col-xs-5">

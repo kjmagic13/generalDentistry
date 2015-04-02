@@ -11,7 +11,7 @@
 @import "bootswatch/simplex/bootswatch";
 
 .jumbotron {
-	background: url({{site.baseurl}}/images/hurricane.png) center center no-repeat;
+	background: url({{site.baseurl}}/images/hurricane.png) top left no-repeat;
 	background-position: cover;
 
 	text-shadow: 3px 3px #000;

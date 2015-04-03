@@ -11,13 +11,15 @@
 @import "bootswatch/simplex/bootswatch";
 
 .jumbotron {
+
 	background: url({{site.baseurl}}/images/hurricane.png) top left no-repeat;
 	background-position: cover;
 
-	text-shadow: 3px 3px #000;
+	text-shadow: 2px 2px #000;
 	color: #fff;
 
 	small { color: #fff; }
+	.caption { color: #f1f1b7; font-style: italic; }
 
 }
 

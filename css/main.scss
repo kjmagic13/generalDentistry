@@ -6,41 +6,25 @@
 
 @import "font-awesome";
 
-@import "bootswatch/simplex/variables";
+@import "bootswatch/flatly/variables";
 @import "bootstrap";
-@import "bootswatch/simplex/bootswatch";
+@import "bootswatch/flatly/bootswatch";
 
 .jumbotron {
-
-	background: url({{site.baseurl}}/images/hurricane.png) top left no-repeat;
-	background-position: cover;
-
-	text-shadow: 2px 2px #000;
-	color: #fff;
-
-	small { color: #fff; }
-	.caption { color: #f1f1b7; font-style: italic; }
-
+	background: url(http://www.frankfurter-gesundheitstage.de/wp-content/gallery/presse/beauty-1.jpg) left center no-repeat;
+	background-size: cover;
+	min-height: 230px
 }
 
+@media (min-width: 1200px) {
+}
 
 // all but xs
 @media (min-width: 768px) {
 	// nav
 	#navBar {
-		height: 101px;
-		margin-bottom: 35px;
-	}
-
-	#navInfo {
-		strong {
-			font-size: 2em;
-			line-height: 1em;
-			small {
-				font-size: 0.8em;
-				font-weight: normal;
-			}
-		}
+		border-radius: 0;
+		// margin-bottom: 35px;
 	}
 
 	#navPills {
@@ -48,22 +32,23 @@
 		margin-bottom: 15px;
 	}
 
-	.navbar-brand {
-		margin-top: -34px;
-		margin-left: 0;
-		padding-top: 0;
-	}
+	// .navbar-brand {
+	// 	margin-top: -34px;
+	// 	margin-left: 0;
+	// 	padding-top: 0;
+	// }
 
+	
 	.jumbotron {
-		position: relative;
+		min-height: 330px;
 	}
 
-	#freeAdmission {
-		position: absolute;
-		right: -30px;
-		bottom: -75px;
-		// background-color: #fff;
+	// hours
+	.dl-horizontal {
+		dt { width: 90px }
+		dd { margin-left: 110px; }
 	}
+
 }
 
 // news images

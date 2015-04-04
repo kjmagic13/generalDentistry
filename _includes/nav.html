@@ -2,15 +2,13 @@
 	<div class="row">
 		<div class="col-xs-12">
 			<ul class="nav nav-pills pull-right">
-				{% for navitem in site.data.navitems %}
-				<li><a href="{{ navitem.href | prepend: site.baseurl }}">{{navitem.text}}</a></li>
-				{% endfor %}
+				<li><a href="#"><i class="fa fa-fw fa-facebook"></i></a></li>
 			</ul>
 		</div>
 	</div>
 </div>
 
-<nav id="navBar" class="navbar navbar-inverse">
+<nav id="navBar" class="navbar navbar-default">
 	<div class="container">
 		<!-- Brand and toggle get grouped for better mobile display -->
 		<div class="navbar-header">
@@ -21,7 +19,7 @@
 				<span class="icon-bar"></span>
 			</button>
 			<a class="navbar-brand" href="{{ "/" | prepend: site.baseurl }}">
-				<img class="hidden-xs" alt="{{ site.title }}" src="{{site.baseurl}}/images/logo-full.png" width="298">
+				<img class="hidden-xs" alt="{{ site.title }}" src="{{site.baseurl}}/images/logo-full.png">
 				<span class="visible-xs">{{ site.title }}</span>
 			</a>
 		</div>
@@ -29,21 +27,13 @@
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-			<ul class="nav navbar-nav visible-xs">
+			<ul class="nav navbar-nav navbar-right">
 				{% for navitem in site.data.navitems %}
 				<li><a href="{{ navitem.href | prepend: site.baseurl }}">{{navitem.text}}</a></li>
 				{% endfor %}
 			</ul>
 
-			<ul class="nav navbar-nav navbar-right"></ul>
-
-			<p id="navInfo" class="navbar-text navbar-right text-right hidden-xs">
-				<strong>
-					{{ site.event_date | date: "%A %B %-d, %Y" }}<br>
-					<small>{{site.start_time}} to {{site.end_time}}</small>
-				</strong><br>
-				Free Expo Admission – Free Parking – Free Admission to MOSI
-			</p>
+			<!-- <ul class="nav navbar-nav navbar-right"></ul> -->
 
 		</div>
 	</div>

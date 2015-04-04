@@ -1,6 +1,0 @@
----
----
-
-$ ->
-
-	$('#partner-images').freetile()

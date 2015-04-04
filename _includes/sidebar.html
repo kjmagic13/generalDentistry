@@ -1,42 +1,24 @@
-<p>
-	<a href="{{ "/sponsor" | prepend: site.baseurl }}" class="btn btn-sm btn-block btn-success">
-		Sponsors Register Here
-		<i class="fa fa-fw fa-hand-o-up"></i>
-	</a>
-</p>
-
-
-<div class="panel panel-info">
+<div class="panel panel-warning">
 	<div class="panel-heading">
-		<h3 class="panel-title text-center">Event Details</h3>
+		<h3 class="panel-title text-center">Location Details</h3>
 	</div>
 	<div class="panel-body">
-		<p class="lead">
-			<strong>
-				{{ site.event_date | date: "%A %B %-d, %Y" }} from {{site.start_time}} to {{{site.end_time}}
-			</strong>
-		</p>
 
-		<h5>
-			MOSI: Museum of Science & Industry<br>
+		<h5 class="text-center">
+			{{site.title}}<br>
 			<small>
-				4801 E Fowler Ave<br>
-				Tampa, FL 33617
+				5201 Central Avenue<br>
+				Tampa, FL 33603
 			</small>
 		</h5>
 
 		<p>
-			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3521.044298399061!2d-82.404526!3d28.053672!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2c7c5fff744c9%3A0x9d89692880773301!2sMOSI+%3A+Museum+of+Science+%26+Industry!5e0!3m2!1sen!2sus!4v1427313235859" width="100%" height="250" frameborder="0" style="border:0"></iframe>
-		</p>
-
-		<p class="small text-center text-success">
-			FREE Expo Admission, Parking, & Admission to MOSI
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3522.9824609093316!2d-82.45504!3d27.994433!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2c41f3fe9a0bd%3A0xc71fce732e32480!2s5201+N+Central+Ave%2C+Tampa%2C+FL+33603!5e0!3m2!1sen!2sus!4v1428168973332" width="100%" height="250" frameborder="0" style="border:0"></iframe>
 		</p>
 
 	</div>
 </div>
-<p>
-	<button type="button" class="btn btn-lg btn-block btn-primary" data-toggle="modal" data-target="#evacModal">
-		My Evacuation Zone <i class="fa fa-fw fa-warning"></i>
-	</button>
-</p>
+
+<div class="well text-center">
+	{% include hours.html %}
+</div>

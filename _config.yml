@@ -1,18 +1,24 @@
 # Site settings
-title: Tampa Bay Hurricane Expo
-email: info@hillsboroughcounty.org
-description: "The Tampa Bay Hurricane Expo will feature guest speakers, safety demonstrations, emergency vehicle displays, vendors of safety products, and personal disaster preparedness."
+title: General Dentistry
+email: dr@dentistkumar.com
+description: "The objective of our practice is to provide high quality dental care and education to our patients, delivering services in a manner designed to be safe, of maximum benefit to the patient, and in a cost efficient manner, consistent with the patient's needs and desires and the ethics of the profession."
 
-baseurl: "/hurricaneExpo" # the subpath of your site, e.g. /blog/
-url: "http://tampabayhurricaneexpo.com" # the base hostname & protocol for your site
+baseurl: "/generalDentistry" # the subpath of your site, e.g. /blog/
+url: "http://dentistkumar.com" # the base hostname & protocol for your site
 
 # paginate: 2
 # paginate_path: "news/:num"
 
 timezone: America/New_York
-event_date: 2015-05-30 10:00:00 EST
-start_time: 10 a.m.
-end_time: 4 p.m.
+
+hours:
+  Monday: 9:00 AM - 4:30 PM
+  Tuesday: 9:00 AM - 6:00 PM
+  Wednesday: 9:00 AM - 6:00 PM
+  Thursday: 9:00 AM - 5:00 PM
+  Friday: 9:00 AM - 2:00 PM
+  Saturday: Closed
+  Sunday: Closed
 
 # Build settings
 markdown: kramdown

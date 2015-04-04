@@ -1,10 +1,12 @@
 - text: Home
   href: /
-- text: Expo News
-  href: /news
-- text: Exhibitors & Sponsors
-  href: /sponsor
-- text: Our Partners
-  href: /partners
+- text: Our Team
+  href: /team
+- text: Office Info
+  href: /office
+- text: Dental Treatments
+  href: /services
+- text: Testimonials
+  href: /tetimonials
 - text: Contact Us
   href: /contact
